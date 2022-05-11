@@ -63,7 +63,7 @@ git switch main
 git merge --no-ff issue/#1 -m "close #1"
 ```
 
-## ブランチ削除
+## ブランチ削除（ローカルリポジトリ）
 
 ```bash
 git branch -d [delete-branch-name]
@@ -74,6 +74,17 @@ git branch -d issue/#1
 強制削除（未コミット有り？の場合等）
 ```bash
 git branch -D [delete-branch-name]
+```
+## ブランチ削除（リモートリポジトリ）
+
+```bash
+git push origin :[delete-branch-name]
+```
+
+## ブランチの同期（リモートリポジトリからローカルリポジトリ）
+
+```bash
+git fetch -p
 ```
 
 ## ブランチ名変更
