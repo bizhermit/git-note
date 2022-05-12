@@ -2,7 +2,7 @@
 
 ## マージのNonFastForward
 
-mergeはデフォルトでNonFastForward  
+mergeをデフォルトでNonFastForwardが有効になるように変更  
 ただしpullの場合は対象外
 
 ```bash
@@ -17,5 +17,5 @@ git merge [src-branch-name] -m "[comment]"
 ```
 FastForward
 ```bash
-git merge -ff [src-branch-name] -m "[comment]"
+git merge --ff [src-branch-name] -m "[comment]"
 ```
