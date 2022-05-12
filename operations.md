@@ -63,6 +63,9 @@ git switch main
 git merge --no-ff issue/#1 -m "close #1"
 ```
 
+デフォルトでNonFastForwardになるよう設定可。  
+[マージのNonFastForward](settings.md/#マージのnonfastforward)
+
 ## ブランチ削除（ローカルリポジトリ）
 
 ```bash
