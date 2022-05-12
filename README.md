@@ -2,4 +2,4 @@
 
 - [operations](operations.md)
 - [settings](settings.md)
-- [GitIssueFlow](git-issue-flow.md)
+- [GitHubIssuesFlow](github-issues-flow.md)
