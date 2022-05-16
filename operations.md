@@ -66,6 +66,23 @@ git merge --no-ff issue/#1 -m "close #1"
 デフォルトでNonFastForwardになるよう設定可。  
 [マージのNonFastForward](settings.md/#マージのnonfastforward)
 
+## ブランチのマージ取り消し
+
+コンフリクト対応前
+```bash
+git merge --abort
+```
+
+コンフリクト対応後（マージ完了前）
+```bash
+git reset --hard HEAD
+```
+
+マージ完了後
+```bash
+git revert --hard ORIG_HEAD
+```
+
 ## ブランチ削除（ローカルリポジトリ）
 
 ```bash
