@@ -1,5 +1,8 @@
 # Git操作
 
+<details>
+<summary>リモートリポジトリ関連</summary>
+
 ## リモートリポジトリ確認
 
 ```bash
@@ -21,6 +24,11 @@ git remote remove [remote-name]
 # e.g.
 git remote remove origin
 ```
+
+</details>
+
+<details>
+<summary>ブランチ関連</summary>
 
 ## ブランチ確認
 
@@ -120,6 +128,11 @@ git branch -m master main
 git branch -M [old-branch-name] [new-branch-name]
 ```
 
+</details>
+
+<details>
+<summary>変更管理関連</summary>
+
 ## 変更をステージ
 
 ```bash
@@ -191,6 +204,11 @@ git pull
 git pull origin main
 ```
 
+</details>
+
+<details>
+<summary>タグ関連</summary>
+
 ## タグ作成
 
 ```bash
@@ -213,3 +231,22 @@ git push origin :[tag-name]
 ```bash
 git ls-remote --tags
 ```
+
+</details>
+
+<details>
+<summary>その他</summary>
+
+## git管理から除外せず、ワークツリーの変更を無視
+
+```bash
+git update-index --skip-worktree [file-name]
+```
+
+## git管理から除外せず、ワークツリーの変更無視を解除
+
+```bash
+git update-index --no-skip-worktree [file-name]
+```
+
+</details>
