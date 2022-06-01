@@ -237,16 +237,26 @@ git ls-remote --tags
 <details>
 <summary>その他</summary>
 
-## git管理から除外せず、ワークツリーの変更を無視
+## git管理から除外せず、ワークツリーの変更を無視（リモートが更新されても上書きしない）
 
 ```bash
 git update-index --skip-worktree [file-name]
 ```
 
-## git管理から除外せず、ワークツリーの変更無視を解除
+## ↑の解除
 
 ```bash
 git update-index --no-skip-worktree [file-name]
+```
+
+## git管理から除外せず、ワークツリーの変更を無視（リモートが更新されたら上書きする）
+```bash
+git update-index --assume-unchanged [file-name]
+```
+
+## ↑の解除
+```bash
+git update-index --no-assume-unchanged [file-name]
 ```
 
 </details>
