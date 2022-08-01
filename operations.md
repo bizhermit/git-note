@@ -25,6 +25,12 @@ git remote remove [remote-name]
 git remote remove origin
 ```
 
+## リモートリポジトリ変更
+
+```bash
+git remote set-url [remote-name] [url]
+```
+
 </details>
 
 <details>
